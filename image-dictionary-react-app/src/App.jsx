@@ -21,13 +21,13 @@ function App() {
 
   return (
     <div className="main">
-      <h1>games</h1>
+      <h1>games paradise</h1>
 
       <div className="container">
         {data.map((items,key) => {
           return (
             <div className="card" key={key}>
-              <h1>{items.title}</h1>
+              <h1 className="head">{items.title}</h1>
               <img src={items.thumbnail} alt={items.thumbnail} className="img"/>
               <h2 className="gen"><span className="genre">Genre : </span>{items.genre}</h2>
 
