@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #060d1e;
+  color: #ffffff;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.main {
+  padding: 30px 5%;
+}
+
+.main h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 35px;
+  color: #00e5ff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.card {
+  background: #151b2b;
+  border: 1px solid #27334b;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 1s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(236, 239, 240, 0.15);
+  border-color: #00e5ff;
+}
+
+.card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+ 
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.04);
+}
+
+.card h1 {
+  font-size: 21px;
+  padding: 18px 16px 10px;
+  color: #00e5ff;
+}
+
+.card h2 {
+  font-size: 15px;
+  font-weight: normal;
+  color: #c3ccdc;
+  padding: 8px 16px;
+  line-height: 1.6;
+}
+
+.card p,
+.card h3,
+.card h4,
+.card h5 {
+  padding: 5px 16px;
+  font-size: 13px;
+  color: #97999c;
+  font-weight: normal;
+}
+
+.card h3 {
+  color: #a78bfa;
+}
+
+.card h4 {
+  color: #cbd5e1;
+}
+
+.card h5 {
+  margin-bottom: 15px;
+}
+
+.card a {
+  display: inline-block;
+  margin: 8px 0 0 16px;
+  padding: 10px 14px;
+  background: #00e5ff;
+  color: #0b0f19;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.card a:hover {
+  background: #ffffff;
+}
+
+.card a:last-child {
+  background: #a78bfa;
+}
+
+.card a:last-child:hover {
+  background: #c4b5fd;
+}
+
+.genre{
+  color: #00e5ff;
+ 
+}
+.gen{
+  margin-top: 10px;
+}
